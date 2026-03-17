@@ -1,12 +1,13 @@
 package com.example.LogiTrack.auth;
 import com.example.LogiTrack.config.JwtService;
 import com.example.LogiTrack.exception.BusinessRuleException;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
-
+@Tag(name = "Login", description = "Procesa todo lo relacionado con el login")
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/auth")
